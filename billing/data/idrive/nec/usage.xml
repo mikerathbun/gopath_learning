@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<StorageReport>
+	<!--1. User details-->
+	<User Name="nora.j.valdez">
+		<Usage-MB>22397</Usage-MB>
+	</User>
+	<!--2. User details-->
+	<User Name="alex.alarcon">
+		<Usage-MB>1</Usage-MB>
+	</User>
+	<!--3. User details-->
+	<User Name="ruben.a.cervantes">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--4. User details-->
+	<User Name="ROBYN.ALLI">
+		<Usage-MB>9</Usage-MB>
+	</User>
+	<!--5. User details-->
+	<User Name="henry.c.linn">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--6. User details-->
+	<User Name="alexanderia.e.Maali">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--7. User details-->
+	<User Name="stefan.v.garcia">
+		<Usage-MB>6094</Usage-MB>
+	</User>
+	<!--8. User details-->
+	<User Name="Andrewlo.Jackson">
+		<Usage-MB>10318</Usage-MB>
+	</User>
+	<!--9. User details-->
+	<User Name="tina.m.test">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--10. User details-->
+	<User Name="felix.m.rivera">
+		<Usage-MB>5015</Usage-MB>
+	</User>
+	<!--11. User details-->
+	<User Name="luis.a.lozano">
+		<Usage-MB>20681</Usage-MB>
+	</User>
+	<!--12. User details-->
+	<User Name="clifford.g.koch">
+		<Usage-MB>538</Usage-MB>
+	</User>
+	<!--13. User details-->
+	<User Name="jose.l.herrera36">
+		<Usage-MB>2</Usage-MB>
+	</User>
+	<!--14. User details-->
+	<User Name="joseph.gutierrez">
+		<Usage-MB>775</Usage-MB>
+	</User>
+	<!--15. User details-->
+	<User Name="brian.m.haggerty">
+		<Usage-MB>625</Usage-MB>
+	</User>
+	<!--16. User details-->
+	<User Name="michael.d.hayward14">
+		<Usage-MB>3137</Usage-MB>
+	</User>
+	<!--17. User details-->
+	<User Name="bruce.andrew1">
+		<Usage-MB>187</Usage-MB>
+	</User>
+	<!--18. User details-->
+	<User Name="Bruce.Munson1">
+		<Usage-MB>20209</Usage-MB>
+	</User>
+	<!--19. User details-->
+	<User Name="markos.j.rodriguez">
+		<Usage-MB>603</Usage-MB>
+	</User>
+	<!--20. User details-->
+	<User Name="robert.e.kelley">
+		<Usage-MB>8507</Usage-MB>
+	</User>
+	<!--21. User details-->
+	<User Name="carlos.ortiziii">
+		<Usage-MB>3745</Usage-MB>
+	</User>
+	<!--22. User details-->
+	<User Name="jason.d.soper2test">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--23. User details-->
+	<User Name="george.vaovasa">
+		<Usage-MB>6617</Usage-MB>
+	</User>
+	<!--24. User details-->
+	<User Name="william.w.tate">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--25. User details-->
+	<User Name="kenneth.m.horton">
+		<Usage-MB>588</Usage-MB>
+	</User>
+	<!--26. User details-->
+	<User Name="stephen.w.huntington">
+		<Usage-MB>2130</Usage-MB>
+	</User>
+	<!--27. User details-->
+	<User Name="cecilia.r.aguilar">
+		<Usage-MB>494</Usage-MB>
+	</User>
+	<!--28. User details-->
+	<User Name="annitta.m.shareef">
+		<Usage-MB>751</Usage-MB>
+	</User>
+	<!--29. User details-->
+	<User Name="Adam.C.Allen">
+		<Usage-MB>859</Usage-MB>
+	</User>
+	<!--30. User details-->
+	<User Name="janette.ramos">
+		<Usage-MB>486</Usage-MB>
+	</User>
+	<!--31. User details-->
+	<User Name="terry.l.lingle">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--32. User details-->
+	<User Name="thomas.r.schneid">
+		<Usage-MB>2731</Usage-MB>
+	</User>
+	<!--33. User details-->
+	<User Name="Danny.Delane">
+		<Usage-MB>34452</Usage-MB>
+	</User>
+	<!--34. User details-->
+	<User Name="alfred.toscano">
+		<Usage-MB>46556</Usage-MB>
+	</User>
+	<!--35. User details-->
+	<User Name="ruth.sullivan">
+		<Usage-MB>406</Usage-MB>
+	</User>
+	<!--36. User details-->
+	<User Name="joshua.s.balditt">
+		<Usage-MB>4</Usage-MB>
+	</User>
+	<!--37. User details-->
+	<User Name="thomas.w.travis">
+		<Usage-MB>11</Usage-MB>
+	</User>
+	<!--38. User details-->
+	<User Name="ruben.gonzales">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--39. User details-->
+	<User Name="irether.j.gaines">
+		<Usage-MB>56</Usage-MB>
+	</User>
+	<!--40. User details-->
+	<User Name="ruben.c.gonzales.ctr">
+		<Usage-MB>1770</Usage-MB>
+	</User>
+	<!--41. User details-->
+	<User Name="dean.rogers">
+		<Usage-MB>5984</Usage-MB>
+	</User>
+	<!--42. User details-->
+	<User Name="keedric.a.woodard">
+		<Usage-MB>9844</Usage-MB>
+	</User>
+	<!--43. User details-->
+	<User Name="john.a.chemycz">
+		<Usage-MB>11400</Usage-MB>
+	</User>
+	<!--44. User details-->
+	<User Name="carlos.a.hernandezib">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--45. User details-->
+	<User Name="thelma.r.kegley">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--46. User details-->
+	<User Name="Lincolnh">
+		<Usage-MB>24045</Usage-MB>
+	</User>
+	<!--47. User details-->
+	<User Name="aaron.o.stafford2">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--48. User details-->
+	<User Name="andrew.j.charba">
+		<Usage-MB>28</Usage-MB>
+	</User>
+	<!--49. User details-->
+	<User Name="carlos.a.test">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--50. User details-->
+	<User Name="ed.villegas">
+		<Usage-MB>451</Usage-MB>
+	</User>
+	<!--51. User details-->
+	<User Name="Eddie.Lockhart">
+		<Usage-MB>7</Usage-MB>
+	</User>
+	<!--52. User details-->
+	<User Name="jesus.j.espinoza">
+		<Usage-MB>14</Usage-MB>
+	</User>
+	<!--53. User details-->
+	<User Name="Efren.Sarabia">
+		<Usage-MB>18916</Usage-MB>
+	</User>
+	<!--54. User details-->
+	<User Name="elizabeth.schlinke">
+		<Usage-MB>7627</Usage-MB>
+	</User>
+	<!--55. User details-->
+	<User Name="erma.m.brown">
+		<Usage-MB>42486</Usage-MB>
+	</User>
+	<!--56. User details-->
+	<User Name="carlos.a.herna">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--57. User details-->
+	<User Name="rene.c.martinez">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--58. User details-->
+	<User Name="louis.thomas">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--59. User details-->
+	<User Name="robert.c.taylor378">
+		<Usage-MB>18307</Usage-MB>
+	</User>
+	<!--60. User details-->
+	<User Name="Fred.Chapal">
+		<Usage-MB>1087</Usage-MB>
+	</User>
+	<!--61. User details-->
+	<User Name="shelemuel.d.amie">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--62. User details-->
+	<User Name="jeremy.l.moon.ctr">
+		<Usage-MB>3162</Usage-MB>
+	</User>
+	<!--63. User details-->
+	<User Name="william.w.watson36">
+		<Usage-MB>25</Usage-MB>
+	</User>
+	<!--64. User details-->
+	<User Name="gerardo.hernandez5">
+		<Usage-MB>46</Usage-MB>
+	</User>
+	<!--65. User details-->
+	<User Name="dusty.l.deaver">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--66. User details-->
+	<User Name="abdulaziz.aliu">
+		<Usage-MB>747</Usage-MB>
+	</User>
+	<!--67. User details-->
+	<User Name="patrick.e.hay">
+		<Usage-MB>8509</Usage-MB>
+	</User>
+	<!--68. User details-->
+	<User Name="eric.a.antu">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--69. User details-->
+	<User Name="thelma.t.kegley">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--70. User details-->
+	<User Name="roosevelt.sanders">
+		<Usage-MB>671</Usage-MB>
+	</User>
+	<!--71. User details-->
+	<User Name="harry.martinez">
+		<Usage-MB>12270</Usage-MB>
+	</User>
+	<!--72. User details-->
+	<User Name="patrick.t.prowell">
+		<Usage-MB>856</Usage-MB>
+	</User>
+	<!--73. User details-->
+	<User Name="josiah.j.dolejsi">
+		<Usage-MB>13</Usage-MB>
+	</User>
+	<!--74. User details-->
+	<User Name="mitchell.j.seal">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--75. User details-->
+	<User Name="james.d.wilson3">
+		<Usage-MB>237214</Usage-MB>
+	</User>
+	<!--76. User details-->
+	<User Name="jennifer.l.phifer">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--77. User details-->
+	<User Name="byron.bland">
+		<Usage-MB>284</Usage-MB>
+	</User>
+	<!--78. User details-->
+	<User Name="james.herron1">
+		<Usage-MB>11501</Usage-MB>
+	</User>
+	<!--79. User details-->
+	<User Name="jerry.l.manning">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--80. User details-->
+	<User Name="JAMES.KOPCHAK1">
+		<Usage-MB>8671</Usage-MB>
+	</User>
+	<!--81. User details-->
+	<User Name="jan.berdan">
+		<Usage-MB>16712</Usage-MB>
+	</User>
+	<!--82. User details-->
+	<User Name="james.hoscheit">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--83. User details-->
+	<User Name="michael.keachie">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--84. User details-->
+	<User Name="jeffrey.moses">
+		<Usage-MB>531</Usage-MB>
+	</User>
+	<!--85. User details-->
+	<User Name="benjamin.moravec">
+		<Usage-MB>35</Usage-MB>
+	</User>
+	<!--86. User details-->
+	<User Name="kenneth.heller">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--87. User details-->
+	<User Name="fred.f.hunter2">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--88. User details-->
+	<User Name="patricia.willis1">
+		<Usage-MB>17208</Usage-MB>
+	</User>
+	<!--89. User details-->
+	<User Name="ivan.y.jackson">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--90. User details-->
+	<User Name="charlie.j.scott">
+		<Usage-MB>2876</Usage-MB>
+	</User>
+	<!--91. User details-->
+	<User Name="john.thomas.martinez">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--92. User details-->
+	<User Name="geneva.d.kenney">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--93. User details-->
+	<User Name="rudolph.b.jaso">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--94. User details-->
+	<User Name="joseph.l.clark3.ctr">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--95. User details-->
+	<User Name="florence.v.rodriguez">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--96. User details-->
+	<User Name="jody.lucio">
+		<Usage-MB>33553</Usage-MB>
+	</User>
+	<!--97. User details-->
+	<User Name="mary.lou.tyler">
+		<Usage-MB>39335</Usage-MB>
+	</User>
+	<!--98. User details-->
+	<User Name="tammy.l.calvanico">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--99. User details-->
+	<User Name="corbin.a.gerald">
+		<Usage-MB>113071</Usage-MB>
+	</User>
+	<!--100. User details-->
+	<User Name="joe.h.perez">
+		<Usage-MB>19</Usage-MB>
+	</User>
+	<!--101. User details-->
+	<User Name="jonathan.m.poole">
+		<Usage-MB>1980</Usage-MB>
+	</User>
+	<!--102. User details-->
+	<User Name="jorge.a.viera">
+		<Usage-MB>46304</Usage-MB>
+	</User>
+	<!--103. User details-->
+	<User Name="joyce.l.wilson">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--104. User details-->
+	<User Name="jose.villarreal3">
+		<Usage-MB>9708</Usage-MB>
+	</User>
+	<!--105. User details-->
+	<User Name="yolanda.p.hopewell">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--106. User details-->
+	<User Name="kerstan.marquez">
+		<Usage-MB>52731</Usage-MB>
+	</User>
+	<!--107. User details-->
+	<User Name="onofre.a.garcia.ctr">
+		<Usage-MB>9976</Usage-MB>
+	</User>
+	<!--108. User details-->
+	<User Name="lance.riddle">
+		<Usage-MB>28</Usage-MB>
+	</User>
+	<!--109. User details-->
+	<User Name="Lilia.Tijerina">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--110. User details-->
+	<User Name="thomas.c.humes">
+		<Usage-MB>13398</Usage-MB>
+	</User>
+	<!--111. User details-->
+	<User Name="Mike.Rathbun">
+		<Usage-MB>740</Usage-MB>
+	</User>
+	<!--112. User details-->
+	<User Name="Pamela.Barnes">
+		<Usage-MB>1469</Usage-MB>
+	</User>
+	<!--113. User details-->
+	<User Name="paul.gregory.smith">
+		<Usage-MB>1423</Usage-MB>
+	</User>
+	<!--114. User details-->
+	<User Name="raul.trevinojr">
+		<Usage-MB>269</Usage-MB>
+	</User>
+	<!--115. User details-->
+	<User Name="alan.dossantos">
+		<Usage-MB>9485</Usage-MB>
+	</User>
+	<!--116. User details-->
+	<User Name="rene.rodriguez14">
+		<Usage-MB>89753</Usage-MB>
+	</User>
+	<!--117. User details-->
+	<User Name="rick.pursley">
+		<Usage-MB>28</Usage-MB>
+	</User>
+	<!--118. User details-->
+	<User Name="robert.m.delagarza">
+		<Usage-MB>46045</Usage-MB>
+	</User>
+	<!--119. User details-->
+	<User Name="rick.bull">
+		<Usage-MB>4963</Usage-MB>
+	</User>
+	<!--120. User details-->
+	<User Name="roberto.matosjr">
+		<Usage-MB>58663</Usage-MB>
+	</User>
+	<!--121. User details-->
+	<User Name="Scott.Sasse">
+		<Usage-MB>1199</Usage-MB>
+	</User>
+	<!--122. User details-->
+	<User Name="Scott.C.Shelton">
+		<Usage-MB>60</Usage-MB>
+	</User>
+	<!--123. User details-->
+	<User Name="scott.sears2">
+		<Usage-MB>18954</Usage-MB>
+	</User>
+	<!--124. User details-->
+	<User Name="shad.sullivan">
+		<Usage-MB>18</Usage-MB>
+	</User>
+	<!--125. User details-->
+	<User Name="Sonia.Faust">
+		<Usage-MB>0</Usage-MB>
+	</User>
+	<!--126. User details-->
+	<User Name="james.w.leavitt">
+		<Usage-MB>2</Usage-MB>
+	</User>
+	<!--127. User details-->
+	<User Name="steve.zavala">
+		<Usage-MB>16140</Usage-MB>
+	</User>
+	<!--128. User details-->
+	<User Name="valerie.evering">
+		<Usage-MB>18479</Usage-MB>
+	</User>
+	<!--129. User details-->
+	<User Name="virginia.carrillo">
+		<Usage-MB>21799</Usage-MB>
+	</User>
+	<!--130. User details-->
+	<User Name="william.murray13">
+		<Usage-MB>6279</Usage-MB>
+	</User>
+	<!--131. User details-->
+	<User Name="william.roser">
+		<Usage-MB>28575</Usage-MB>
+	</User>
+	<!--132. User details-->
+	<User Name="James.A.Bingham">
+		<Usage-MB>21</Usage-MB>
+	</User>
+	<!--133. User details-->
+	<User Name="wilfredo.dejesus">
+		<Usage-MB>2</Usage-MB>
+	</User>
+</StorageReport>
