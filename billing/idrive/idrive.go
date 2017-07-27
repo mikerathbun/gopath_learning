@@ -44,6 +44,54 @@ func (u User) ChargeLine() string {
 	return fmt.Sprintf("%s I drive size %d", u.Name, u.Size)
 
 }
+
+type ChargeLine struct {
+	ChargeName        string
+	ChargeDescription string
+	ChargeDate        time.Time
+	ChargeAmount      float64
+}
+
+func (u ChargeLine) String() string {
+	return fmt.Sprintf("Charging %s ", u.ChargeDescription)
+
+}
+func GetCharges() {
+
+	chargeDate := time.Date(2017, time.July, 28, 0, 0, 0, 0, time.UTC)
+	db, err := sql.Open("mysql",
+		"root:www.mike.com@tcp(127.0.0.1:3306)/billing")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	rows, err := db.Query(`SELECT ChargeName, 
+				ChargeDescription, ChargeDate, ChargeAmount 
+				FROM charges 
+				WHERE CostCategoryID = ? AND CustomerName = ? and ChargeDate = ?`, 1, "NEC", chargeDate)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer rows.Close()
+	for rows.Next() {
+		u := new(ChargeLine)
+
+		err := rows.Scan(&u.ChargeName, &u.ChargeDescription, &u.ChargeDate, &u.ChargeAmount)
+		if err != nil {
+			log.Fatal(err)
+		}
+		fmt.Println(u)
+	}
+	err = rows.Err()
+	if err != nil {
+		log.Fatal(err)
+	}
+}
 func RunCharges() {
 	chargeDate := time.Date(2017, time.July, 28, 0, 0, 0, 0, time.UTC)
 	db, err := sql.Open("mysql",
