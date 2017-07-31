@@ -56,11 +56,12 @@ func (u ChargeLine) String() string {
 	return fmt.Sprintf("Charging %s ", u.ChargeDescription)
 
 }
-func GetCharges() {
+func GetCharges() []ChargeLine {
+	var returnCharges []ChargeLine
 
 	chargeDate := time.Date(2017, time.July, 28, 0, 0, 0, 0, time.UTC)
 	db, err := sql.Open("mysql",
-		"root:www.mike.com@tcp(127.0.0.1:3306)/billing")
+		"root:www.mike.com@tcp(127.0.0.1:3306)/billing?parseTime=true")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -85,12 +86,15 @@ func GetCharges() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Println(u)
+		returnCharges = append(returnCharges, *u)
+		// fmt.Println(u)
+
 	}
 	err = rows.Err()
 	if err != nil {
 		log.Fatal(err)
 	}
+	return returnCharges
 }
 func RunCharges() {
 	chargeDate := time.Date(2017, time.July, 28, 0, 0, 0, 0, time.UTC)

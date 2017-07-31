@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"strings"
 
 	"github.com/jung-kurt/gofpdf"
 
@@ -25,7 +24,7 @@ func main() {
 }
 
 func createPDFInvoice() {
-	marginCell := 2. // Margin of top/bottom of cell
+	// marginCell := 2. // Margin of top/bottom of cell
 	pdf := gofpdf.New("P", "mm", "A4", "")
 	pdf.AddPage()
 	pdf.SetFont("Arial", "", 11)
@@ -36,37 +35,30 @@ func createPDFInvoice() {
 	pdf.Cell(99, 10, customerName)
 	pdf.AddPage()
 	cols := []float64{60, 100, pagew - mleft - mright - 100 - 60}
-	rows := [][]string{}
-	for i := 1; i <= 30; i++ {
-		word := fmt.Sprintf("%d:%s", i, strings.Repeat("A", i%100))
-		rows = append(rows, []string{word, word, word})
-	}
-	for _, row := range rows {
+	fmt.Println(cols)
+	// rows := [][]string{}
+	var rows = idrive.GetCharges()
+
+	for i, row := range rows {
 		curx, y := pdf.GetXY()
 		x := curx
-
+		fmt.Println(x)
 		height := 0.
 		_, lineHt := pdf.GetFontSize()
+		// fmt.Println(row)
 
-		for i, txt := range row {
-			lines := pdf.SplitLines([]byte(txt), cols[i])
-			h := float64(len(lines))*lineHt + marginCell*float64(len(lines))
-			if h > height {
-				height = h
-			}
-		}
 		// Add a new page if the height of the row doesn't fit on the page
 		if pdf.GetY()+height > pageh-mbottom {
 			pdf.AddPage()
 			y = pdf.GetY()
 		}
-		for i, txt := range row {
-			width := cols[i]
-			pdf.Rect(x, y, width, height, "")
-			pdf.MultiCell(width, lineHt+marginCell, txt, "", "", false)
-			x += width
-			pdf.SetXY(x, y)
-		}
+		// for i, txt := range row {
+		// 	width := cols[i]
+		// 	pdf.Rect(x, y, width, height, "")
+		// 	pdf.MultiCell(width, lineHt+marginCell, txt, "", "", false)
+		// 	x += width
+		// 	pdf.SetXY(x, y)
+		// }
 		pdf.SetXY(curx, y+height)
 
 	}
