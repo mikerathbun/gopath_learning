@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/jung-kurt/gofpdf"
@@ -26,40 +25,31 @@ func main() {
 func createPDFInvoice() {
 	// marginCell := 2. // Margin of top/bottom of cell
 	pdf := gofpdf.New("P", "mm", "A4", "")
+	var width, _ = pdf.GetPageSize()
 	pdf.AddPage()
 	pdf.SetFont("Arial", "", 11)
-	pagew, pageh := pdf.GetPageSize()
-	mleft, mright, _, mbottom := pdf.GetMargins()
+	// pagew, pageh := pdf.GetPageSize()
+	// mleft, mright, _, mbottom := pdf.GetMargins()
 
 	pdf.Image("data/nec_logo.png", 10, 10, 50, 0, false, "", 0, "")
 	pdf.Cell(99, 10, customerName)
 	pdf.AddPage()
-	cols := []float64{60, 100, pagew - mleft - mright - 100 - 60}
-	fmt.Println(cols)
-	// rows := [][]string{}
+
 	var rows = idrive.GetCharges()
+	// CellFormat(w,h,text,borderStr,lineLocation (0-right1-nxtln-2below),alighStr,fill,link,linkstr)
+	pdf.CellFormat(40, 7, "Personal Storage", "1", 0, "", false, 0, "")
+	pdf.Ln(-1)
 
-	for i, row := range rows {
-		curx, y := pdf.GetXY()
-		x := curx
-		fmt.Println(x)
-		height := 0.
-		_, lineHt := pdf.GetFontSize()
-		// fmt.Println(row)
+	for _, row := range rows {
+		pdf.CellFormat(width-35, 6, row.String(), "1", 0, "", false, 0, "")
+		pdf.CellFormat(20, 6, row.Cost(), "1", 0, "", false, 0, "")
 
+		pdf.Ln(-1)
 		// Add a new page if the height of the row doesn't fit on the page
-		if pdf.GetY()+height > pageh-mbottom {
-			pdf.AddPage()
-			y = pdf.GetY()
-		}
-		// for i, txt := range row {
-		// 	width := cols[i]
-		// 	pdf.Rect(x, y, width, height, "")
-		// 	pdf.MultiCell(width, lineHt+marginCell, txt, "", "", false)
-		// 	x += width
-		// 	pdf.SetXY(x, y)
+		// if pdf.GetY()+height > pageh-mbottom {
+		// 	pdf.AddPage()
+		// 	y = pdf.GetY()
 		// }
-		pdf.SetXY(curx, y+height)
 
 	}
 	err := pdf.OutputFileAndClose("hello.pdf")

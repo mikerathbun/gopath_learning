@@ -53,8 +53,11 @@ type ChargeLine struct {
 }
 
 func (u ChargeLine) String() string {
-	return fmt.Sprintf("Charging %s ", u.ChargeDescription)
+	return fmt.Sprintf("%s", u.ChargeDescription)
 
+}
+func (u ChargeLine) Cost() string {
+	return fmt.Sprintf("$%.2f", u.ChargeAmount)
 }
 func GetCharges() []ChargeLine {
 	var returnCharges []ChargeLine
