@@ -8,33 +8,53 @@ import (
 	"github.com/mikerathbun/gopath_learning/billing/idrive"
 )
 
-const customerName = "NEC"
+const (
+	customerName = "Network Enterprise Center"
+	invoiceTitle = "Information Technology FY2017 Invoice"
+	invoiceDates = "From 10/1/2016 To 9/30/2017"
+)
+
+var pdf = gofpdf.New("P", "mm", "A4", "")
+
+// var pdf gofpdf
 
 func RunCharges() {
 
 	idrive.RunCharges()
 
 }
-
+func init() {
+}
 func main() {
-	createPDFInvoice()
+	createPDFInvoiceHeader()
+	// createPDFInvoice()
 
+	err := pdf.OutputFileAndClose("hello.pdf")
+	if err != nil {
+		log.Fatal(err)
+	}
 	// RunCharges()
 }
 
-func createPDFInvoice() {
-	// marginCell := 2. // Margin of top/bottom of cell
-	pdf := gofpdf.New("P", "mm", "A4", "")
-	var width, _ = pdf.GetPageSize()
+func createPDFInvoiceHeader() {
+
+	// pdf := gofpdf.New("P", "mm", "A4", "")
+	// width, _ := pdf.GetPageSize()
 	pdf.AddPage()
-	pdf.SetFont("Arial", "", 11)
+	pdf.SetFont("Arial", "B", 15)
 	// pagew, pageh := pdf.GetPageSize()
 	// mleft, mright, _, mbottom := pdf.GetMargins()
 
 	pdf.Image("data/nec_logo.png", 10, 10, 50, 0, false, "", 0, "")
-	pdf.Cell(99, 10, customerName)
+	pdf.CellFormat(15, 15, customerName, "0", 0, "TC", false, 0, "")
+	pdf.CellFormat(15, 15, invoiceTitle, "0", 0, "TC", false, 0, "")
+}
+
+func createPDFInvoice() {
+	// marginCell := 2. // Margin of top/bottom of cell
 	pdf.AddPage()
 
+	width, _ := pdf.GetPageSize()
 	var rows = idrive.GetCharges()
 	// CellFormat(w,h,text,borderStr,lineLocation (0-right1-nxtln-2below),alighStr,fill,link,linkstr)
 	pdf.CellFormat(40, 7, "Personal Storage", "1", 0, "", false, 0, "")
@@ -51,10 +71,6 @@ func createPDFInvoice() {
 		// 	y = pdf.GetY()
 		// }
 
-	}
-	err := pdf.OutputFileAndClose("hello.pdf")
-	if err != nil {
-		log.Fatal(err)
 	}
 
 	idrive.GetCharges()

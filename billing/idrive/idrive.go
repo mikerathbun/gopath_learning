@@ -17,6 +17,7 @@ const cost = 5.00
 const totalSize = 1000
 const tierBreakdown = 1000
 const customerName = "NEC"
+const invoiceChargeDescription = "Provide workgroup shares/home directory file storage(700.1.7.1)"
 
 type Query struct {
 	UserList []User `xml:"User"`
@@ -77,7 +78,7 @@ func GetCharges() []ChargeLine {
 	rows, err := db.Query(`SELECT ChargeName, 
 				ChargeDescription, ChargeDate, ChargeAmount 
 				FROM charges 
-				WHERE CostCategoryID = ? AND CustomerName = ? and ChargeDate = ?`, 1, "NEC", chargeDate)
+				WHERE ChargeAmount > 0 AND CostCategoryID = ? AND CustomerName = ? and ChargeDate = ?`, 1, "NEC", chargeDate)
 	if err != nil {
 		log.Fatal(err)
 	}
