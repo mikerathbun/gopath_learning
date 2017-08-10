@@ -12,12 +12,16 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-const costCategoryId = 1
-const cost = 5.00
-const totalSize = 1000
-const tierBreakdown = 1000
-const customerName = "NEC"
-const invoiceChargeDescription = "Provide workgroup shares/home directory file storage(700.1.7.1)"
+const (
+	costCategoryId           = 1
+	cost                     = 5.00
+	totalSize                = 1000
+	tierBreakdown            = 1000
+	customerName             = "NEC"
+	invoiceChargeDescription = "Provide workgroup shares/home directory file storage(700.1.7.1)"
+	expenseDate              = "8/8/2017"
+	chargeType               = "Gigabyte(s)"
+)
 
 type Query struct {
 	UserList []User `xml:"User"`
@@ -78,7 +82,10 @@ func GetCharges() []ChargeLine {
 	rows, err := db.Query(`SELECT ChargeName, 
 				ChargeDescription, ChargeDate, ChargeAmount 
 				FROM charges 
-				WHERE ChargeAmount > 0 AND CostCategoryID = ? AND CustomerName = ? and ChargeDate = ?`, 1, "NEC", chargeDate)
+				WHERE ChargeAmount > 0 
+				AND CostCategoryID = ? 
+				AND CustomerName = ? 
+				AND ChargeDate = ?`, 1, "502_FSS", chargeDate)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -112,7 +119,7 @@ func RunCharges() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	xmlFile, err := os.Open("data/idrive/nec/usage.xml")
+	xmlFile, err := os.Open("data/idrive/502_FSS/usage.xml")
 	if err != nil {
 		fmt.Println("Error opening up file:", err)
 		return
